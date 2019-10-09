@@ -1,0 +1,733 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    /*font-size: 1em;
+    line-height: 1.4;*/
+}
+
+@font-face {
+    font-family: 'youngserifregular';
+    src: url('../fonts//fonts/youngserif-regular-webfont.eot');
+    src: url('../fonts/youngserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/youngserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/youngserif-regular-webfont.woff') format('woff'),
+         url('../fonts/youngserif-regular-webfont.ttf') format('truetype'),
+         url('../fonts/youngserif-regular-webfont.svg#youngserifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    /*display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;*/
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    /*margin: 0.2em 0;*/
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0; 
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+   
+    
+}
+
+p {
+    line-height: 2;
+}
+
+div{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+h2::first-letter,
+h3::first-letter,
+h4::first-letter  {
+    text-transform: capitalize;
+}
+
+
+
+/*header styling*/
+
+header {
+    width: 100%;
+    height: 1030px;
+    background: url(../img/header-background.jpg)no-repeat fixed;
+    background-size: cover;
+    background-position: right;
+    color: #eee;
+    padding-left: 233px;
+
+}
+
+.logo p {
+    padding-top: 55px;
+    font-family: 'youngserifregular', serif ;
+    font-size: 30px;
+    font-style: italic; 
+   
+   
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 100;
+    padding-top: 300px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+
+}
+
+
+h1+p {
+  
+    padding-top: 10px;
+    font-size: 13px;
+    width: 440px;
+    font-weight: 100;
+    
+
+}
+
+
+/*iphone styling*/
+.iphone {
+    background: 
+                url(../img/iphone-image.png),
+                url(../img/iphone-shape.png);
+                
+    background-repeat: no-repeat,
+                       no-repeat;
+    background-position: 370px 94px,
+                         center;
+                        
+    position: relative;
+    width: 716px; 
+    height: 948px;
+    z-index: 10; 
+    bottom: 260px;
+    left: 263px;
+   
+
+}
+
+
+/*top main*/
+main .main-left,
+main .main-right{
+    width: 50%;
+    font-size: 14px;
+    
+}
+
+.main-left p, 
+.main-right p {
+    color: #959595;
+    padding-bottom: 35px;
+    text-indent: 10px;
+}
+
+
+.main-left{
+    float:left;
+}
+
+.main-left h2 {
+    padding-top: 114px;
+    padding-bottom: 40px;
+    font-weight: 200;
+    font-size: 35px;
+}
+.main-left p {
+    width: 622px;
+    
+}
+
+.main-right{
+    float:right;
+    padding-top: 277px;
+   
+}
+
+
+/*all boxes*/
+.photo-boxes h4 {
+
+    font-size: 30px;
+    color: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    padding-bottom: 32px;
+}
+
+.photo-boxes p {
+    color: #eee;
+    font-size: 13px;
+    padding-bottom: 45px;
+}
+
+.photo-boxes a {
+    color: #eee;
+    font-family: 'youngserifregular', serif ; 
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.photo-boxes i {
+    color: #eee;
+}
+
+.photo-boxes i:hover {
+    color: #f5989d;
+}
+
+.our-clients i {
+    position: absolute;
+    right: 250px;
+}
+
+.sign-up i {
+    position: absolute;
+    right: 730px;
+}
+
+
+/*top row*/
+.design-quality,
+.built-to-last,
+.our-clients {
+    float: left;
+    width: 33.3%;
+    padding: 56px;
+
+}
+
+.design-quality {
+    background-color: #f5989d;
+}
+
+.design-quality p {
+    width: 303px;
+}
+
+.built-to-last {
+    background-color: #615f7d;
+}
+
+.built-to-last p {
+    width: 308px;
+}
+
+
+.our-clients {
+    background-image: url(../img/our-clients-box.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-clients p {
+    padding-bottom: 71px;
+    width: 308px;
+}
+
+
+/*bottom row*/
+.sign-up{
+    background-image: url(../img/sign-up-box.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 66.7%;
+    float:left;
+    padding: 79px;
+
+}
+
+.sign-up p {
+    width: 549px;
+}
+
+.picture-perfect {
+    width: 33.3%;
+    float: right;
+    background-color: #82ca9c;
+    padding: 53px;
+}
+
+.picture-perfect p {
+    width: 341px;
+    padding-bottom: 71px;
+}
+
+.sample{
+    width:100%;
+}
+.reasons {
+    width:1500px;
+    margin: 0 auto;
+    color: #192431;
+
+}
+.reasons h2 {
+    margin-top: 97px;
+    margin-bottom: 67px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.more-power{
+    width: 100%;
+    height: 874px;
+    background: url(../img/steering-wheel.jpg) no-repeat;
+    background-size: cover;
+    color: #eee;
+}
+.more-power div:nth-child(1){
+    margin:0 auto;
+    padding-top: 414px;
+
+}
+.more-power div:nth-child(1) h3{
+    font-size: 60px;
+    font-weight: 100;
+    width: 529px;
+    padding-top: 28px;
+}
+.more-power div:nth-child(1) p{
+    width: 471px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.more-power div:nth-child(1) a {
+    color: #eee;
+    font-family: 'youngserifregular', serif ; 
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase; 
+
+}
+.more-power div:nth-child(1) a span {
+    padding-left: 35px;
+}
+   
+.more-power span {
+    font-style: italic;
+}
+
+
+
+/*A look at the details*/
+.bottom-main h2 {
+    margin-top: 97px;
+    margin-bottom: 67px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.bottom-main h3 {
+    margin-bottom: 30px;
+    color: #67676d;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.web,
+.performance,
+.cultural,
+.sustainability  {
+    width: 25%;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 160px;
+    color: #959595;
+   
+}
+
+.bottom-main p {
+    width: 278px;
+}
+
+
+/* Reason to get on board*/
+
+
+.web-based ,
+.team-login ,
+.great-support {
+    width: 33%;
+    float: left;
+    font-size: 14px;
+    color: #192431;
+
+}
+
+footer {
+    padding-top: 50px;
+    margin-top: 165px;
+    display: block;
+    height: 300px;
+    background-color: #192431;
+    color: #eee;
+}
+
+.social-media, 
+.stay-in-touch {
+    float: left;
+    width: 50%;
+}
+.social-media h3 {
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+.social-media {
+    padding-left: 197px;
+    width: 850px;
+    font-size: 13px;
+}
+
+.form {
+    padding-left: 368px;
+}
+
+
+.form label {
+    font-size: 13px;
+
+}
+.form input {
+    margin-top: 30px;
+    width: 400px;
+    height: 58px;
+    border: none;
+}
+
+#email {
+    display: block;
+    background-image: url(../img/submit-button.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.stay-in-touch p {
+    color: #364455;
+    padding-top: 10px;
+    width: 758px;
+    padding-left: 368px;
+    font-size: 13px;
+
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin-in {
+    color: #192431;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline;
+    position: relative;
+    bottom: 175px;
+    left: 465px;
+    padding: 6px;
+
+}
+
+.fa-facebook-f {
+    background-color: #38548f;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+ }
+.fa-twitter {
+    background-color: #32cdfb;
+    
+
+}
+.fa-linkedin-in {
+    background-color: #2686b9;
+
+}
+
+.fa-facebook-f:hover,
+ .fa-twitter:hover,
+ .fa-linkedin-in:hover {
+    background-color: #eee;
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
